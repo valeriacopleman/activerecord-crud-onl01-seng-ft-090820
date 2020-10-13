@@ -30,8 +30,8 @@ def can_be_created_in_a_block(args_block = {title: "The Room", release_date: 200
   # release_date == 1990
   
   Movie.create do |m|
-    m.title = args_block[title:]
-    m.release_date = args_block[release_date:]
+    m.title = args_block[:title]
+    m.release_date = args_block[:release_date]
   end
 end
 
